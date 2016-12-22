@@ -33,12 +33,15 @@ public class OpenApplet extends Applet
 		inputPanel.add(nameLabel);
 		inputPanel.add(nameField);
 
+		Panel buttonPanel = new Panel();
+		buttonPanel.add(okButton);
+		buttonPanel.add(cancelButton);
+
 		Panel openPanel = new Panel();
-		openPanel.setLayout(new GridLayout(5, 1));
+		openPanel.setLayout(new GridLayout(4, 1));
 		openPanel.add(headerLabel);
 		openPanel.add(inputPanel);
-		openPanel.add(okButton);
-		openPanel.add(cancelButton);
+		openPanel.add(buttonPanel);
 		openPanel.add(footerLabel);
 
 		add(openPanel);
